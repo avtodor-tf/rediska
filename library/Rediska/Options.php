@@ -66,9 +66,10 @@ abstract class Rediska_Options
         } else if (array_key_exists($name, $this->_options)) {
             $this->_options[$name] = $value;
             return $this;
-        } else {
-            throw new $this->_optionsException("Unknown option '$name'");
         }
+//         else {
+//            throw new $this->_optionsException("Unknown option '$name'");
+//        }
     }
 
     /**
